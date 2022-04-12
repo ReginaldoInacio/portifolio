@@ -1,0 +1,389 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap');
+
+/*Zerando o CSS*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  width: 100vw;
+  height: 100vh;
+  font-size: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 8vh;
+  background-color: rgb(3, 3, 3); /*verificar cor*/
+}
+
+/* box da header*/
+.menu {
+  text-transform: uppercase;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem;
+}
+/*mudando o logo*/
+.logo {
+  font-size: 1.5rem;
+  letter-spacing: 0.3rem;
+  cursor: pointer;
+  color: white; /*verificar cor*/
+  padding: 25px;
+}
+
+/*colocando o menu no sentido de linha*/
+.headermenu .listadeitens {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  padding: 15px;
+}
+/*design da lista de itens*/
+.headermenu .listadeitens a {
+  text-decoration: none;
+  color: rgb(255, 255, 255); /*verificar cor */
+  padding: 1.5rem; /*espaço de dentro pra fora*/
+  transform: 2ms ease-in; /*animação mouse*/
+  position: relative;
+}
+/* fazendo o hover*/
+.headermenu .listadeitens a:before {
+  content: '';
+  position: absolute;
+  bottom: 15px;
+  left: 0px;
+  width: 0px;
+  height: 3px;
+  background-color: rgb(196, 26, 226); /*verificar cor*/
+  transition: all 1s ease;
+}
+.headermenu .listadeitens a:hover::before {
+  width: 100%;
+}
+
+/*---HOME---*/
+.home {
+  display: flex;
+  background-color: #18151a;
+  height: 63vh;
+  color: rgb(0, 0, 0);
+  min-width: 500px;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+}
+.imghome {
+  position: flex;
+  display: flex;
+  justify-content: center;
+  size-adjust: initial;
+  z-index: 0;
+  background-attachment: fixed;
+}
+
+.home.maxwidth {
+  margin: auto 0 auto 40px;
+}
+/*Formação*/
+.formacao{
+  position: flex;
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  margin-left: 100px;
+  background: rgb(255, 255, 255);
+}
+.formacao .container{
+  width: 700;
+  height: auto;
+  display: inline-block;
+  justify-content: space-around;
+
+}
+.formacao .container .cartao1{
+  letter-spacing: 1px;
+  width: 400px;
+  margin: 20px;
+  padding: 10px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.formacao .container .cartao2{
+  letter-spacing: 1px;
+  width: 400px;
+  margin: 20px;
+  padding: 10px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+
+}
+.formacao .container .cartao3{
+  letter-spacing: 1px;
+  width: 550px;
+  margin: 20px;
+  padding: 10px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.formacao .container .cartao4{
+  letter-spacing: 1px;
+  width: 550px;
+  margin: 20px;
+  padding: 10px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.formacao .container .cartao5{
+  letter-spacing: 1px;
+  width: 550px;
+  margin: 20px;
+  padding: 10px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.formacao img{
+  width: 64px;
+  height: 64px;
+}
+.formacao h1{
+  text-transform: capitalize;
+  margin-top: 9px;
+  font-size: 25px;
+  color: black;
+}
+.formacao h2{
+  font-size: 15px;
+  color: #c706b7;
+  margin-bottom: 5px;
+}
+.formacao p{
+  font-size: 12px;
+  color: #000 solid;
+}
+
+/*linguagem*/
+.linguagem{
+  display: flex;
+  flex-direction: column;
+}
+.linguagem img{
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+}
+.linguagem1{
+  display: flex;
+  flex-direction: column;
+}
+.linguagem1 img{
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+}
+
+/*card*/
+
+.container {
+  position: relative;
+  width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+  background: rgb(255, 255, 255);
+
+}
+
+.cartao{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height: 80vh;
+  z-index: 1;
+  background-color: #fff;
+}
+.cartao .container {
+  width: 1150px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.cartao .container .cards{
+  position: relative;
+  padding: 10px;
+  width: 270px;
+  height: auto;
+  background-color: #ffffff;
+  border: 1px solid rgb(184, 184, 184);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+  text-align: center;
+}
+.cartao .container .cards .cardimg img{
+  transition: 0.5s ease-in;
+
+}
+.cartao .container .cards .cardimg h1{
+  font-size: 2rem ease-in;
+
+}
+.cartao .container .cards .cardcontent{
+  padding: 10px;
+  text-align: center;
+}
+.cartao .container .cards .cardimg p{
+  color: #666;
+  transition: 0.5s;
+}
+.cartao .container .cards .cardimg a{
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 40px;
+  text-decoration: none;
+  transition: 0.5s;
+  outline: none;
+  margin-top: 20px;
+}
+.cartao .container .cards:hover{
+  background-color: #c706b7;
+  color: #fff;
+  margin-top: -30px;
+  box-shadow: 2px 20px 25px #85307e;
+  border-color: #c706b7;
+}
+.cartao .container .cards:hover img{
+  filter:invert(1);
+}
+.cartao .container .cards:hover p{
+  color: #fff;
+}
+.cartao .container .cards:hover a{
+  background-color: #ffffff;
+  color: #000;
+}
+
+/*Animação do portifolio / circulo */
+
+.branco {
+  color: white;
+}
+.h2 {
+  font-size: 5em;
+  position: relative;
+  color: rgb(0, 0, 0);
+  font-weight: 300;
+  cursor: default;
+  z-index: 1;
+}
+.revela {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.circle {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+  pointer-events: none;
+  transition: 0.1s;
+  clip-path: circle(30px at var(--x) var(--y));
+  z-index: 0;
+}
+.h2:hover ~ .circle {
+  background: #c706b7 ;
+  clip-path: circle(80px at var(--x) var(--y));
+}
+
+
+/* About*/
+.about{
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+	padding: 100px 0px;
+  background-image: url(Imagens/papeldeparede.png);
+}
+
+.about-text{
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(170, 8, 154, 0.3);
+  border-radius: 20px;
+	width: 850px;
+  height: auto;
+  padding: 15px;
+}
+.main{
+	width: 1130px;
+	max-width: 95%;
+	margin: 10px auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.about-text h2{
+	color:#fff;
+	font-size: 50px;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+}
+.about-text h5{
+	color: #ff93f6;
+	letter-spacing: 2px;
+	font-size: 18px;
+	margin-bottom: 5px;
+	text-transform: capitalize;
+}
+.about-text p{
+	color: #ffffff ;
+	letter-spacing: 1px;
+	line-height: 25px;
+	font-size: 14px;
+	margin-bottom: 25px;
+}
+button{
+	background-color:#c706b7;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 13px 30px;
+	border-radius: 30px;
+	transition: .4s; 
+}
+button:hover{
+	background-color: #fff;
+	border: 2px solid #85307e;
+  color: #000;
+	cursor: pointer;
+}
